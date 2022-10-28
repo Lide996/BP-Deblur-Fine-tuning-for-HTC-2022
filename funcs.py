@@ -125,7 +125,7 @@ def DDPM(xt, device, img_size=128):
     xt[xt<0.6] = 0
     xt[xt>0.7] = 1
     
-    lambd = np.linspace(0.001,0.3,1000)
+    lambd = np.linspace(0.001,0.2,1000)
     
     x_T = torch.randn((1, 1, img_size, img_size)).to(device)
     
