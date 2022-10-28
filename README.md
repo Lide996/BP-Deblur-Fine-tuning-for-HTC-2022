@@ -2,7 +2,7 @@
 # BP-Deblur-Fine tuning for HTC 2022
 <font size=3> Wang Jianyu<sup>1</sup>, Wang Rongqian<sup>1</sup>, Liu Xintong<sup>1</sup>, Lin Guochang<sup>1</sup>, Chen Fukai<sup>1</sup>, Cai Lide<sup>2</sup> </font>
 
-<font size=2><sup>1</sup> Yau Mathematical Science Center, Tsinghua University, Beijing, China</font>
+<font size=2><sup>1</sup> Yau Mathematical Sciences Center, Tsinghua University, Beijing, China</font>
 
 <font size=2> <sup>2</sup> Department of Mathematical Science, Tsinghua University, Beijing, China </font>
 
@@ -60,7 +60,7 @@ python main.py --data_dir './data/' --out_dir './output/' --group_number 1
 
 ## Examples
 
-We list the results of `htc2022_ta_full` here as an example. The test data whose projection angle is limited to [0,90] is provided in the data folder as an example. The result can be easily obtained by running
+We list the results of `htc2022_ta_full` here as an example. The test data whose projection angle is limited to [0,30] is provided in the data folder as an example. The result can be easily obtained by running
 
 ```
 python main.py
