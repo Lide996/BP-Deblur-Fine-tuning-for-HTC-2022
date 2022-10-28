@@ -224,7 +224,7 @@ def Load_process(data_path,output_path,group_number):
     ##ddpm
     ddpm=DDPM(result,device)
     ##super resolution
-    SR=sr.super_resolution(result,device)
+    SR=sr.super_resolution(ddpm,device)
 
     ##totate the reconstruction to original orientation
     SR=rotate(SR,angle_min,order=0)    
