@@ -122,10 +122,10 @@ def DDPM(xt, device, img_size=128):
     model = model.to(device)
 
     ##Normalization
-    xt[xt<0.8] = 0
-    xt[xt>0.8] = 1
+    xt[xt<0.6] = 0
+    xt[xt>0.7] = 1
     
-    lambd = np.linspace(0.001,0.5,1000)
+    lambd = np.linspace(0.001,0.3,1000)
     
     x_T = torch.randn((1, 1, img_size, img_size)).to(device)
     
@@ -171,7 +171,7 @@ def DDPM(xt, device, img_size=128):
     x_t[x_t<0.5] = 0
     x_t[x_t>0.5] = 1
     
-    return x_t
+    return x_t.cpu().numpy()
 
 def Load_process(data_path,output_path,group_number):
     '''
