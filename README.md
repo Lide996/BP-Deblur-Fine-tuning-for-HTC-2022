@@ -60,7 +60,7 @@ python main.py --data_dir './data/' --out_dir './output/' --group_number 7
 
 ## Examples
 
-We list the results of `htc2022_ta_full` here as an example. The test data whose projection angle is limited to [0,30] is provided in the data folder as an example. The result can be easily obtained by running
+We list the results of `htc2022_ta_full` here as an example. The test data whose projection angle is limited to [60,90] is provided in the data folder as an example. The result can be easily obtained by running
 
 ```
 python main.py --data_dir './data/' --out_dir './output/' --group_number 7
