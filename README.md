@@ -49,7 +49,7 @@ conda env create -f Torch.yaml
 The pre-trained weights of the networks and part of the training data of HTC 2022 are provided in this repository. To test the algorithm, just run the following code
 
 ```
-python main.py --data_dir './data/' --out_dir './output/' --group_number 1
+python main.py --data_dir './data/' --out_dir './output/' --group_number 7
 ```
 
 `--data_dir` : Folder where the input files are located.
@@ -63,7 +63,7 @@ python main.py --data_dir './data/' --out_dir './output/' --group_number 1
 We list the results of `htc2022_ta_full` here as an example. The test data whose projection angle is limited to [0,30] is provided in the data folder as an example. The result can be easily obtained by running
 
 ```
-python main.py
+python main.py --data_dir './data/' --out_dir './output/' --group_number 7
 ```
 
 **Ground truth**:
@@ -74,7 +74,7 @@ python main.py
 
 | Limited angle |                              BP                              |                             Ours                             |
 | :-----------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-|      30°      | ![image-20221026193249277](README.assets/image-20221026214000039.png) | <img src="README.assets/deblur_ddpm_ta_30.png" alt="image-20221026214114972" style="zoom: 25%;" /> |
+|      30°      | ![image-20221026193249277](README.assets/image-20221026214000039.png) | <img src="README.assets/test_data.png" alt="image-20221026214114972" style="zoom: 25%;" /> |
 
 
 
